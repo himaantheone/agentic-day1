@@ -7,7 +7,10 @@ llm = ChatOpenAI(model="gpt-4.1-nano", seed=6)
 
 resp1 = llm.invoke("We are building an AI system for processing medical insurance claims.")
 
+print(resp1)
+
 resp2 = llm.invoke("What are the main risks in this system?")
+print(resp2)
 
 messages = [
     SystemMessage(content="You are a senior AI architect reviewing production systems."),
